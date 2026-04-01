@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards using Grid</title>
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <div class="card">
+                <h3>Card1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ab minima esse obcaecati laboriosam ullam tempore veritatis non voluptates soluta temporibus quia harum fugiat, reprehenderit consectetur hic provident voluptas! Dolorem.</p>
+                <button>button1</button>
+            </div>
+            <div class="card">
+                <h3>Card2</h3>
+                <p> veritatis non voluptates soluta temporibus quia harum fugiat, reprehenderit consectetur hic provident voluptas! Dolorem.</p>
+                <button>button1</button>
+            </div>
+            <div class="card">
+                <h3>Card3</h3>
+                <p>caecati laboriosam ullam Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio itaque odit, cum esse ducimus porro. tempore veritatis non voluptates soluta temporibus quia harum fugiat, reprehenderit consectetur hic provident voluptas! Dolorem.</p>
+                <button>button1</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<style>
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        text-align: center;
+        /* below 2 lines are option: if u don't use flex:1 in child */
+        /* flex-shrink: 1; 
+        flex-grow: 1; */
+    }
+    .card{
+        width: 450px;
+        border: 1px solid black;
+        padding: 10px;
+        flex: 1; /* flex 1 keep all card size same:even content is less or more */
+    }
+    
+
+</style>
